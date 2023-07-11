@@ -105,6 +105,14 @@ function nextQuestion() {
   showQuestions(questionIndex);
 }
 
+var scores;
+
+if(localStorage.getItem("scores") === null) {
+  scores = []
+} else {
+  scores = JSON.parse(localStorage.getItem("scores"));
+}
+
 function endQuiz() {
   clearInterval(setIntervalId);
   questionIndex = 0
@@ -113,7 +121,13 @@ function endQuiz() {
   scoreEl.textContent = score
   saveBtn.addEventListener("click", function() {
     var initials = initialsInput.value;
-    localStorage.setItem(initials, score);
+    var obj = {
+      initials: initials,
+      score: score
+    }
+    scores.push(obj);
+    localStorage.setItem("scores", JSON.stringify(scores));
+    document.location.href = "scores.html";
   }) 
 }
 

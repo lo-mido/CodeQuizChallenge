@@ -1,7 +1,6 @@
 
 header{
-    display: flex;
-    flex-wrap: wrap;
+ 
 
 }
 
@@ -12,8 +11,10 @@ header h3 {
 
 header p {
     width: 50%;
-    display: flex;
-   justify-content: end; 
+    position: absolute;
+    right: 15px;
+    top: 0;
+   
 }
 
 .hide{
@@ -26,4 +27,76 @@ header p {
  
 #question-section ul{
     list-style: none;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+#intro-section{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#highscore-section ul{
+    
+    list-style: none;
+}
+
+li {
+    background-color: rgb(228, 82, 228);
+    margin: 7px;
+
+}
+#start-btn, .choices{
+    background-color: purple;
+    color:white
+
+
+}
+
+#question-section{
+    background-color: rgb(purple);
+    color: rgb(white, white, white);
+
+}
+
+#initial-section{
+    background-color: rgb(purple);
+    color: rgb(white, white, white);
+}
+    
+
+
+
+button#start-btn, button#save-btn {
+    background-color: purple;
+    color: white;
+}
+
+
+    /* ./assets/css/style.css */
+
+/* Targeting the submit button */
+button#start-btn,
+button#save-btn {
+  background-color: purple;
+  color: white;
+}
+
+/* Targeting the quiz responses */
+section#initial-section label#score {
+  color: purple;
+}
+
+/* Targeting the link at the top */
+header a {
+  font-size: smaller;
+}
+
+/* Aligning the time to the right */
+header p {
+  text-align: right;
 }

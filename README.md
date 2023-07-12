@@ -15,9 +15,7 @@ N/A
 
 Usage
 <img src=".///assets/images/codequiz.png" alt= "picture of coding quiz website" width= " " height=" "> <br/> <figcaption> Coding Quiz created with HTML, CSS and Javascript.
-Use this Link: <a href=" ">
-
- Link to Live Website.
+Use this Link: <a href="https://lo-mido.github.io/CodeQuizChallenge/">Use This Link to View Live Preview</a>
 
 Credits: Team Work Make the Dream Work! We worked together systematically on zoom totaling a total of 15+ Hours
 Phil Loy, Instructor 

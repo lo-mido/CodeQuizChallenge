@@ -72,7 +72,7 @@ function countDown() {
   if (timeLeft === 0) {
     clearInterval(setIntervalId);
   }
-}
+    }
 
 function showQuestions(questionIndex) {
   titleEl.textContent = questionsArray[questionIndex].title;
@@ -84,6 +84,7 @@ function showQuestions(questionIndex) {
   choicesEl[1].addEventListener("click", (checkValue));
   choicesEl[2].addEventListener("click", (checkValue));
   choicesEl[3].addEventListener("click", (checkValue));
+  
 }
 
 function checkValue(event) {

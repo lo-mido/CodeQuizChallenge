@@ -17,3 +17,5 @@ clearBtn.addEventListener("click", function() {
 })
 
 renderScores();
+
+// this second javascript file is for the high score page the functionality if this page is to render the scores and to input into the local storage.

@@ -10,22 +10,16 @@ This project aimed to solve the problem of developing a responsive user interfac
 Table of Contents:
 Paragraph 1: What was the assignment or task? Paragraph 2: What was your motivation? Paragraph 3: What problem does it solve? Paragraph 4 What did you learn? Why did you build this project?
 
-
-https://github.com/lo-mido/CodeQuizChallenge/assets/133980632/14b28810-c891-41b0-bf33-8f706e464851
-
-
 Installation
 N/A
-
-Usage
+##Usage
 <img src=".///assets/images/codequiz.png" alt= "picture of coding quiz website" width= " " height=" "> <br/> <figcaption> Coding Quiz created with HTML, CSS and Javascript.
-Use this Link: <a href="https://lo-mido.github.io/CodeQuizChallenge/">Use This Link to View Live Preview</a>
+Use this Link: <a href="https://lo-mido.github.io/CodeQuizChallenge/">Use This Link to View Live Preview</a>    `
 
 Credits: Team Work Make the Dream Work! We worked together systematically on zoom totaling a total of 15+ Hours
 Phil Loy, Instructor 
  Lourdes Dorvilus https://github.com/lo-mido
- Jacob Nolan Tutor 
-
+ 
 Tutorial Links:
 https://courses.bootcampspot.com/courses/3883/assignments/57119?module_item_id=1004720 https://www.w3schools.com/css/css_selectors.asp https://www.w3schools.com/html/html_attributes.asp https://htmlcheatsheet.com/css/ https://apps.apple.com/us/app/mimo-learn-coding-programming/id1133960732?ppid=36dc2281-6a01-4f94-ad52-05a0a7062255 https://youtu.be/tRZGeaHPoaw
 

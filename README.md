@@ -12,7 +12,16 @@ Paragraph 1: What was the assignment or task? Paragraph 2: What was your motivat
 
 Installation
 N/A
-##Usage
+
+
+Usage
+
+
+
+https://github.com/lo-mido/CodeQuizChallenge/assets/133980632/c391f881-cf03-4a20-b241-45ea4d565ee7
+
+
+
 <img src=".///assets/images/codequiz.png" alt= "picture of coding quiz website" width= " " height=" "> <br/> <figcaption> Coding Quiz created with HTML, CSS and Javascript.
 Use this Link: <a href="https://lo-mido.github.io/CodeQuizChallenge/">Use This Link to View Live Preview</a>    `
 

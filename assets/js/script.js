@@ -10,6 +10,7 @@ var timerEl = document.getElementById("timer");
 var choicesEl = document.querySelectorAll(".choices");
 var initialsInput = document.getElementById("initial-input");
 var saveBtn = document.getElementById("save-btn");
+var answersEl = document.getElementById("answers");
 //  Initialize the variables to 0
 var questionIndex = 0;
 var setIntervalId = 0;
@@ -84,6 +85,7 @@ function countDown() {
     // Allows the server to define the function to showQuestions that takes a question index as parameter 
     //  This function will show the question section responses and set the add an event listener to the check the answer.
 function showQuestions(questionIndex) {
+  answersEl.textContent = "";
   titleEl.textContent = questionsArray[questionIndex].title;
   choicesEl[0].textContent = questionsArray[questionIndex].choices[0];
   choicesEl[1].textContent = questionsArray[questionIndex].choices[1];
@@ -94,21 +96,27 @@ function showQuestions(questionIndex) {
   choicesEl[2].addEventListener("click", (checkValue));
   choicesEl[3].addEventListener("click", (checkValue));
   
+  
+  
 }
 
 // This code checks the value that takes an event parameter and to ensure it matches the correct answer for the current question.
 function checkValue(event) {
+  
   if (event.target.innerHTML === questionsArray[questionIndex].answer) {
     score = score + 20
+    answersEl.textContent = "Correct!"
   } else {
     timeLeft = timeLeft - 10;
+    answersEl.textContent = "Wrong!"
   }
   if (questionIndex >= questionsArray.length - 1) {
     endQuiz();
   } else {
-    nextQuestion();
+    setTimeout(nextQuestion,500);
+    
   }
-
+setIntervalId=setInterval (countDown,3000);
 }
 // Lines 101-110 are if and else statements that check the values and increment of the score is the answer is correct +20 or incorrect -10. Or if the there are more questions or if the quiz has ended.
 
@@ -117,7 +125,7 @@ function nextQuestion() {
   showQuestions(questionIndex);
 }
 
-//  Lines 111-121 declare the function of the ext question and the increment to move to the next question and to declare the score variables.
+//  Lines 111-121 declare the function of the next question and the increment to move to the next question and to declare the score variables.
 var scores;
 
 //  Lines 124-126 check if there are scores stored in local storage and if no scores are found (null--like empty) initialize the scores as an empty array. The json means that if scores are found retrieve them from local storage and parse them as JSON.

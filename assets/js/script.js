@@ -75,7 +75,7 @@ function startQuiz() {
 // This block of code will count down the timer for the questions array and set the interval for the time left and when to reset.
 function countDown() {
   timerEl.textContent = timeLeft--;
-  if (timeLeft <= 0 ) {
+  if (timeLeft < 0 ) {
     clearInterval(setIntervalId);
     timerEl.innerHTML = "Times Up!"
   }
